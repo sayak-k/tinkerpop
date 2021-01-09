@@ -22,14 +22,24 @@
 #endregion
 
 using System.Collections.Generic;
-using System.Text.Json;
 
 namespace Gremlin.Net.Driver.Messages
 {
-    internal class ResponseResult
+    /// <summary>
+    ///     Represents the result as a response to a <see cref="RequestMessage"/> sent as part of a
+    ///     <see cref="ResponseMessage{T}"/> by the server.
+    /// </summary>
+    /// <typeparam name="T">The type of the <see cref="Data"/>.</typeparam>
+    public class ResponseResult<T>
     {
-        public JsonElement Data { get; set; }
-        
+        /// <summary>
+        ///     Gets or sets the data of this result.
+        /// </summary>
+        public T Data { get; set; }
+
+        /// <summary>
+        ///     Gets or sets meta data of this result.
+        /// </summary>
         public Dictionary<string, object> Meta { get; set; }
     }
 }

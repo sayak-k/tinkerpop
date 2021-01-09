@@ -149,7 +149,7 @@ limitations under the License.
         <commons.configuration.version>2.6</commons.configuration.version>
         <commons.lang.version>2.6</commons.lang.version>
         <commons.lang3.version>3.11</commons.lang3.version>
-        <groovy.version>3.0.3</groovy.version>
+        <groovy.version>3.0.7</groovy.version>
         <hadoop.version>2.7.7</hadoop.version>
         <java.tuples.version>1.2</java.tuples.version>
         <javadoc-plugin.version>3.1.0</javadoc-plugin.version>
@@ -230,10 +230,10 @@ limitations under the License.
                                 <exclude>gremlin-javascript/src/main/javascript/gremlin-javascript/node_modules/**</exclude>
                                 <exclude>gremlin-javascript/src/main/javascript/gremlin-javascript/.idea/**</exclude>
                                 <exclude>gremlin-python/src/main/python-reports/**</exclude>
-                                <exclude>gremlin-python/src/main/python/**</exclude>
-                                <exclude>gremlin-python/src/main/jython/venv/**</exclude>
-                                <exclude>gremlin-python/src/main/jython/.pytest_cache/**</exclude>
-                                <exclude>gremlin-python/src/main/jython/.idea/**</exclude>
+                                <exclude>gremlin-python/src/main/jython/**</exclude>
+                                <exclude>gremlin-python/src/main/python/venv/**</exclude>
+                                <exclude>gremlin-python/src/main/python/.pytest_cache/**</exclude>
+                                <exclude>gremlin-python/src/main/python/.idea/**</exclude>
                             </excludes>
                         </configuration>
                     </execution>
